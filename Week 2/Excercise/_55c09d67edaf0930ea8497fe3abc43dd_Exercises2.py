@@ -1,3 +1,4 @@
+
 # - Exercises2.py *- coding: utf-8 -*-
 """
 Python has lists. The empty list is []. The following is a list of one
@@ -6,6 +7,7 @@ define a list, I'll call it lis and we'll do things with it to illustrate
 accessing items in a list. Execute the following cell with Ctrl-Enter.
 """
 # %%
+import random
 lis = ["a", "b", "c", "d", "e", "f"]
 # %%
 """ 
@@ -258,7 +260,7 @@ def         for     lambda  try
 You'll just get a syntax error:
 """
 # %%
-# except = 5
+except_ = 5
 # %%
 """
 Note: for readability, if you feel that you need to use one of these as a 
@@ -301,6 +303,10 @@ Solution:
 """
 # %%
 
+newEngland[0]
+newEngland[1]
+newEngland[1][0]
+newEngland[1][1]
 
 # %%
 """
@@ -415,9 +421,15 @@ Solution Starter:
 
 
 def average(nlis):
-    pass  # delete this and enter your code starting here
+    sum_ = 0
+    for num in nlis:
+        print(num, end=" ")
+        sum_ = sum_ + num
+    print('the average is', sum_/len(nlis))
 
 
+average(numlis)
+average(numlis2)
 # %%
 """
 End solution
@@ -429,7 +441,6 @@ these tools are in modules called libaries and can be loaded into your program
 only when you need them, keeping your programs smaller when they aren't needed. 
 A typical way of doing that is 
 
-import random
 
 which will load the library named random.
 """
@@ -488,17 +499,17 @@ articles = ["a", "the", "that", "this"]
 
 
 def simple_poem():
-    article = random.choice(articles)
-    noun = random.choice(nouns)
-    verb = random.choice(verbs)
-    adverb = random.choice(adverbs)
+    for i in range(4):
+        article = random.choice(articles)
+        noun = random.choice(nouns)
+        verb = random.choice(verbs)
+        adverb = random.choice(adverbs)
+        our_sentence = article + " " + noun + " " + verb + " " + adverb + "."
+        our_sentence = our_sentence.capitalize()
+        print(our_sentence)
 
-    our_sentence = article + " " + noun + " " + verb + " " + adverb + "."
-    our_sentence = our_sentence.capitalize()
 
-    print(our_sentence)
-
-
+# simple_poem()
 # %%
 """
 End Solution:
@@ -590,4 +601,19 @@ Solution:
 # %%
 
 
+def diner_waitress():
+    lis = []
+    print('Hello, I\'ll be your waitress. What will you have?')
+    while True:
+        item = input('menu item:')
+        if item.lower() == 'that\'s all':
+            break
+        else:
+            lis.append(item)
+
+    print('You\'ve ordered:')
+    print(lis)
+
+
+diner_waitress()
 # %%
