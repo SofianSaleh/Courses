@@ -73,12 +73,12 @@ def areatriangle(b, h):
 End solution
 """
 """
-# The following will test areatriangle()
-areatriangle(3, 5)
-areatriangle(2, 20)
 To make a string we may use ' or ". Either works equally well. But if the 
 string contains one, we need to use the other:
 """
+# The following will test areatriangle()
+areatriangle(3, 5)
+areatriangle(2, 20)
 # %%
 name = "His name is Conan O'Brien"
 cat = 'My cat is named "Butters"'
@@ -119,9 +119,9 @@ The Celsius temperature 50.0 is equivalent to 122.0 degrees Fahrenheit.
 """
 # %%
 # The following will test the above function
-celsius_to_fahrenheit(100)
-celsius_to_fahrenheit(0)
-celsius_to_fahrenheit(50.)
+# celsius_to_fahrenheit(100)
+# celsius_to_fahrenheit(0)
+# celsius_to_fahrenheit(50.)
 # %%
 """
 Solution:
@@ -130,12 +130,21 @@ Solution:
 
 
 def celsius_to_fahrenheit(temp):
-
+    """ Converts Celsius temperature to Fahrenheit. 
+        Formula is 9/5 of temp plus  32 """
+    newTemp = (9/5)*temp + 32
+    print('The Celsius temperature ', temp,
+          ' is equivalent to ', newTemp, ' degrees Fahrenheit.')
     # %%
     """
     End solution
     """
-    # %%
+
+
+celsius_to_fahrenheit(100)
+celsius_to_fahrenheit(0)
+celsius_to_fahrenheit(50.)
+# %%
 
 
 def name():
@@ -178,15 +187,21 @@ def name():
         Also, input the city and state and print."""
     fname = input("Enter your first name: ")
     lname = input("Enter your last name: ")
+    city = input('Enter the city you live in: ')
+    state = input("Enter the state you live in: ")
     fullname = fname + " " + lname
+    livesIn = city + ", " + state
 
     print("Your name is:", fullname)
+    print("You live in:", livesIn)
 
 
 # %%
 """
 End solution
 """
+
+# name()
 # %%
 
 
@@ -262,9 +277,9 @@ The absolute value of -5  is  5
 """
 # %%
 # Test runs
-absolutevalue(5)
-absolutevalue(-5)
-absolutevalue(4-4)
+# absolutevalue(5)
+# absolutevalue(-5)
+# absolutevalue(4-4)
 # %%
 """
 Solution:
@@ -274,11 +289,12 @@ Solution:
 
 def absolutevalue(num):
 
-
     # %%
     """
     End solution
     """
+
+
 """
 Example: The next three examples work with the 'input' statement and point out
 some of the things that you might need to be aware of in using one. It also
@@ -389,11 +405,12 @@ Solution:
 
 def inches_to_feet2(inches):
 
-
     # %%
     """
     End solution
     """
+
+
 """
 The 'while' loop. Loops are used to repeat actions and the scope of this
 repetition is indicated by the indention after the 'while' statement.
@@ -464,11 +481,11 @@ Solution:
 
 def countdown1():
 
-
     # %%
     """
 End solution
     """
+
 
 # %%
 """ 
@@ -484,7 +501,7 @@ what error it gives or trying to run the function.
 
 def favorite():
     my_toy = input("What is my favorite toy? ")
-    print("Your favorite toy is", my-toy)
+    print("Your favorite toy is", my_toy)
 
 
 # %%
