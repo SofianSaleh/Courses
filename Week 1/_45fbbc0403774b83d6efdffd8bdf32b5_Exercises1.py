@@ -288,11 +288,21 @@ Solution:
 
 
 def absolutevalue(num):
-
+    if num > 0:
+        print('The absolut value of ', num, ' is ', num)
+    elif num < 0:
+        print('The absolut value of ', num, ' is ', num*-1)
+    else:
+        print('The absolut value of ', num, ' is ', num)
     # %%
     """
     End solution
     """
+
+
+absolutevalue(5)
+absolutevalue(-5)
+absolutevalue(4-4)
 
 
 """
