@@ -67,7 +67,6 @@ Solution:
 def areatriangle(b, h):
     return (f'The area of a triangle of base {b} and height {h} is {0.5*b*h}')
 
-
     # %%
 """
 End solution
@@ -288,12 +287,10 @@ Solution:
 
 
 def absolutevalue(num):
-    if num > 0:
-        print('The absolut value of ', num, ' is ', num)
-    elif num < 0:
-        print('The absolut value of ', num, ' is ', num*-1)
+    if num >= 0:
+        print('The abslout value of ', num, ' is ', num)
     else:
-        print('The absolut value of ', num, ' is ', num)
+        print('The abslout value of ', num, ' is ', num*-1)
     # %%
     """
     End solution
@@ -414,6 +411,9 @@ Solution:
 
 
 def inches_to_feet2(inches):
+    feet = inches//12
+    extra_inches = inches % 12
+    print(inches, 'inches is', feet, "feet and", extra_inches, 'inches')
 
     # %%
     """
@@ -421,6 +421,7 @@ def inches_to_feet2(inches):
     """
 
 
+inches_to_feet2(78)
 """
 The 'while' loop. Loops are used to repeat actions and the scope of this
 repetition is indicated by the indention after the 'while' statement.
@@ -454,10 +455,23 @@ Solution:
 # %%
 
 
+def countdown():
+    ct = 10
+
+    while ct > 0:
+        print(ct, end=' ')
+        ct = ct - 1
+
+    print()
+    print('BLASTOFF!!')
+
+
 # %%
 """
 End solution
 """
+
+countdown()
 """
 The 'for' loop. This loop uses an iterator to determine how many times to go
 through the loop. The iterator we use below is 'range(start, stop, step)'.
@@ -490,6 +504,11 @@ Solution:
 
 
 def countdown1():
+    for ct in range(10, 0, -1):
+        print(ct, end=" ")
+
+    print()
+    print("BLASTOFF!!")
 
     # %%
     """
@@ -497,6 +516,7 @@ End solution
     """
 
 
+countdown1()
 # %%
 """ 
 Some of our exercises involve finding and fixing errors in code. 
