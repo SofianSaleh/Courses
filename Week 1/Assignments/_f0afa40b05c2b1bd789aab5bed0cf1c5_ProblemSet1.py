@@ -95,31 +95,38 @@ before or after the statement of each problem. This helps clarify what you
 are expected to do and shows how the auto-grader expects it to look.
 
 """
-#%%
-def problem1_1():
-    pass # replace this pass (a do-nothing) statement with your code
+# %%
 
-    
-#%%
+
+def problem1_1():
+    print("Problem Set 1")
+
+
+# %%
 
 """
 Problem 1_2:
 Write a function problem1_2(x,y) that prints the sum and product of the
 numbers x and y on separate lines, the sum printing first.
 """
-#%%
-def problem1_2(x,y):
-    pass # replace this pass (a do-nothing) statement with your code
+# %%
 
 
-#%% 
+def problem1_2(x, y):
+    sum_ = x + y
+    product_ = x * y
+    print(sum_)
+    print(product_)
+
+
+# %%
 """
 Test run. Note that the grader program will use different numbers:
 
 problem1_2(3,5)
 8
 15
-"""   
+"""
 """
 Problem 1_3:  
 Write a function problem1_3(n) that adds up the numbers 1 through n and
@@ -133,16 +140,17 @@ this document.  With loops take care that your first and last iterations are
 what you expect. A print statement can be inserted in the loop to monitor it, 
 but be sure this isn't in the submitted function.
 """
-#%%
+# %%
+
+
 def problem1_3(n):
     my_sum = 0
-    pass # replace this pass (a do-nothing) statement with your code
+    for num in range(1, n+1):
+        my_sum = my_sum + num
+    print(my_sum)
 
 
-
-    
-
-#%%
+# %%
 """
 Test run. Note that the grader program will use a different number for n:
 
@@ -159,13 +167,14 @@ should be exactly as written.
 Tip: Watch the spacing before and after your numbers.  Make sure that it is 
 just one space or the auto-grader may not give you credit.
 """
-#%%
+# %%
+
+
 def problem1_4(miles):
-    pass # replace this pass (a do-nothing) statement with your code
+    print('There are', miles*5280, 'feet in', miles, 'miles.')
 
 
-    
-#%%
+# %%
 """
 Test run. Note that the grader program will use different numbers:
 
@@ -181,15 +190,19 @@ a coke." for anyone under 21, and "Have a martini." for anyone 21 or older.
 Tip: Be careful about the ages 7 (a seven year old is not under 7) and 21.
 Also be careful to make the phrases exactly as shown for the auto-grader.
 """
-#%%
+# %%
+
+
 def problem1_5(age):
-    pass # replace this pass (a do-nothing) statement with your code
+    if age < 7:
+        print("Have a glass of milk.")
+    elif age >= 7 & age < 21:
+        print('Have a coke.')
+    else:
+        print('Have a martini.')
 
 
-
-
-    
-#%%
+# %%
 """
 Test runs (3 of them). Note that the grader program will use different numbers:
 problem1_5(5)
@@ -219,21 +232,22 @@ own line, you print even numbers or all numbers, your first number isn't 1 or
 your last number isn't 99.  Always check first and last outputs when you write
 a loop.
 """
-#%%
+# %%
+
+
 def problem1_6():
-    pass # replace this pass (a do-nothing) statement with your code
+    for ct in range(1, 100):
+        print(ct, end=' ')
 
 
-
-    
-#%% 
+# %%
 """
 Test run (I've inserted a newline here to cause wrapping in the editor):
 
 problem1_6()
 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 
 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99
-"""       
+"""
 """
 Problem 1_7:
 Write a function problem1_7() that computes the area of a trapezoid. Here is the
@@ -261,23 +275,26 @@ Enter the length of the other base: 4
 Enter the height: 8
 The area of a trapezoid with bases 3.0 and 4.0 and height 8.0 is 28.0
 
-"""  
-#%%
+"""
+# %%
+
+
 def problem1_7():
-    pass # replace this pass (a do-nothing) statement with your code
+    b1 = float(input('Enter the length of one of the bases:'))
+    b2 = float(input('Enter the length of the other base:'))
+    h = float(input('Enter the height:'))
+
+    A = (1/2)*(b1+b2)*h
+    print('The are of a trapezoid with bases',
+          b1, 'and', b2, 'and height', h, 'is', A)
 
 
+problem1_7()
 
-
-
-
-
-
-#%%
+# %%
 """
 Another test run. In grading, expect different input numbers to be used.
 
-problem1_7()
 
 Enter the length of one of the bases: 10
 
@@ -287,5 +304,3 @@ Enter the height: 12
 The area of a trapezoid with bases 10.0 and 11.0 and height 12.0 is 126.0
 
 """
- 
-    
