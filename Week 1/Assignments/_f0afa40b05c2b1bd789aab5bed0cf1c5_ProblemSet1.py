@@ -123,7 +123,7 @@ def problem1_2(x, y):
 """
 Test run. Note that the grader program will use different numbers:
 
-problem1_2(3,5)
+problem1_2(3, 5)
 8
 15
 """
