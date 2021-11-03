@@ -25,11 +25,14 @@ Couldn't put Humpty together again.
 There are 141 letters in the file.
 
 """
-#%%
-def problem3_1(txtfilename):
-    pass # replace this pass (a do-nothing) statement with your code
+# %%
 
-#%%
+
+def problem3_1(txtfilename):
+    pass  # replace this pass (a do-nothing) statement with your code
+
+
+# %%
 """ 
 Problem 3_2:
 Below you see three objects which are of collection data type: a list, a tuple, 
@@ -45,15 +48,19 @@ different collection.  The grader will use different data.
 
 There is a printout of my run after the problem starter.
 """
-#%%
-nlis = [23,64,23,46,12,24]          # list
-atup = ("c","e","a","d","b")        # tuple
+# %%
+nlis = [23, 64, 23, 46, 12, 24]          # list
+atup = ("c", "e", "a", "d", "b")        # tuple
 str1 = "Rumplestilskin"             # string
 
-#%%
+# %%
+
+
 def problem3_2(collection):
-    pass # replace this pass (a do-nothing) statement with your code
-#%%
+    pass  # replace this pass (a do-nothing) statement with your code
+
+
+# %%
 """ 
 My runs 
 problem3_2(nlis)
@@ -111,13 +118,16 @@ date and then print that.  You can convert any number to string by using str()
 and tie the parts together using +. Duplicate the format of the example output
 exactly. Everything you need to do this is covered in the lectures. ***
 """
-#%%
+# %%
+
+
 def problem3_3(month, day, year):
     """ Takes date of form mm/dd/yyyy and writes it in form June 17, 2016 
         Example3_3: problem3_3(6, 17, 2016) gives June 17, 2016 """
-    pass # replace this pass (a do-nothing) statement with your code
+    pass
 
-#%%
+
+# %%
 """
 Problem 3_4:
 Write a function that is complementary to the one in the previous problem that
@@ -140,12 +150,15 @@ problem3_4("July",17, 2016)
 7/17/2016
 
 """
-#%%
+# %%
+
+
 def problem3_4(mon, day, year):
     """ Takes date such as July 17, 2016 and write it as 7/17/2016 """
-    pass # replace this pass (a do-nothing) statement with your code
+    pass  # replace this pass (a do-nothing) statement with your code
 
-#%%
+
+# %%
 """    
     
 Problem 3_5:
@@ -161,16 +174,18 @@ problem3_5("james")
 
 Below is the start of the program including the dictionary.
 """
-#%%
+# %%
+
 
 def problem3_5(name):
     """ Looks up the phone number of the person whose name is name """
-    
-    phone_numbers = {"abbie":"(860) 123-4535", "beverly":"(901) 454-3241", \
-                      "james": "(212) 567-8149", "thomas": "(795) 342-9145"}
-    pass # replace this pass (a do-nothing) statement with your code
 
-#%%
+    phone_numbers = {"abbie": "(860) 123-4535", "beverly": "(901) 454-3241",
+                     "james": "(212) 567-8149", "thomas": "(795) 342-9145"}
+    pass  # replace this pass (a do-nothing) statement with your code
+
+
+# %%
 """
 Problem 3_6:
 Write a program (not just a function, but a stand alone program or script) that 
@@ -220,8 +235,10 @@ problem3_7("flowers.csv","alyssum")
 
 Solution starter:
 """
-#%%
+# %%
+
+
 def problem3_7(csv_pricefile, flower):
-    pass # replace this pass (a do-nothing) statement with your code
-    
-#%%
+    pass  # replace this pass (a do-nothing) statement with your code
+
+# %%
