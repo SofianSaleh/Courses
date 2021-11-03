@@ -8,5 +8,3 @@ def problem2_7():
     area = ((s*(s-a)*(s-b)*(s-c))**.5)
     print('Area of a triangle with sides', a, b, c, 'is', area)
 
-
-problem2_7()

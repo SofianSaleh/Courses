@@ -3,6 +3,5 @@ newEngland = ["Maine", "New Hampshire", "Vermont", "Rhode Island",
 
 
 def problem2_3(ne):
-    for state in ne:
-        print(state, 'has', len(state), 'letters')
-problem2_3(newEngland)
+    for i in range(0, len(ne)):
+        print(ne[i], "has", len(ne[i]), "letters.")
