@@ -7,3 +7,4 @@ def problem3_1(txtfilename):
         print(line, end='')
 
     print(f'\n\nThere are {sum} letters in the file')
+    f.close()

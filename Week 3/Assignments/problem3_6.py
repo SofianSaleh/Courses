@@ -1,14 +1,14 @@
-# -problem3_6.py *- coding: utf-8 -*-
-
 import sys
 
 infile = sys.argv[1]
 outfile = sys.argv[2]
-inf = open(infile)
-outf = open(outfile, 'w')
-count = []
-for line in inf:
-    line = line.strip('\n')
-    outf.write(str(len(line) - 1) + '\n')
-inf.close()
-outf.close()
+
+infile = open(infile)
+outfile = open(outfile, 'w')
+
+for line in infile:
+    line = line.strip("\n")
+    outfile.write(str(len(line)) + "\n")
+
+infile.close()
+outfile.close()
