@@ -1,10 +1,13 @@
-
 def problem3_1(txtfilename):
-    f = open(txtfilename)
-    count = 0
-    for line in f:
-        count += len(line)
-        print(line, end='')
+    """ Opens file and prints its contents line by line. """
+    infile = open(txtfilename)
 
-    print(f'\n\nThere are {sum} letters in the file')
-    f.close()
+    sum = 0
+
+    for line in infile:
+        sum = sum + len(line)
+        print(line, end="")  # the file has "\n" at the end of each line already
+
+    print("\n\nThere are", sum, "letters in the file.")
+
+    infile.close()
