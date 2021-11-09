@@ -12,7 +12,7 @@ It's a repository that holds all the information and solutions to the Exercises 
 
 ```bash
 cd <directory desired>
-git clone https://github.com/SofianSaleh/python_programming.git
+git clone https://github.com/SofianSaleh/courses.git
 cd python_programming
 code .
 ```
